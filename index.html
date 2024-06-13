@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эмоционалды Интеллект Тесті</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="quiz">
+            <h1>Эмоционалды интеллектті анықтау тесті</h1>
+            <div id="question-container">
+                <div id="question">Сұрақ осында болады</div>
+                <div id="answer-buttons" class="btn-container">
+                    <button class="btn" data-score="3">Әрқашан</button>
+                    <button class="btn" data-score="2">Жиі</button>
+                    <button class="btn" data-score="1">Кейде</button>
+                    <button class="btn" data-score="0">Сирек</button>
+                </div>
+            </div>
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <div id="progress">Сұрақ <span id="current-question">1</span> / <span id="total-questions">10</span></div>
+        </div>
+    </div>
+
+    <div id="result-container" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeResult()">&times;</span>
+            <h2>Сіздің нәтижеңіз</h2>
+            <p id="result-score"></p>
+            <p id="result-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
